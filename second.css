@@ -1,20 +1,21 @@
 *{
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    height: 200vh;
     align-items: center;
     display:flex ;
     justify-content: center;
     /* background-color: aquamarine; */
-    background-image: url(back1.jpg);
 } 
 fieldset{
+    height: 75vh;
+    background-image: url(images/back1.jpg);
     width: 45vw;
     padding: 1%;
-    border-radius: 10px 30px;
+    border-radius: 0px 30px;
+    border-color: orange;
     backdrop-filter: blur(10px);
 }
 .item{
@@ -38,6 +39,8 @@ select input{
 }
 .button{
     padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
 }
 input{
     border-radius: 10px;
@@ -46,4 +49,30 @@ input{
 .none{
     display: none ;
     background: white;
+}
+.trigger.campus{
+    display: flex;
+}
+.trigger{
+    display: none;
+}
+
+.photos{
+    background-color: azure;
+    padding: 1%;
+}
+.photos img{
+    height: 50vh;
+    width: 30vw;
+}
+.sidebar{
+    margin-left: 2%;
+    margin-right: 30%;
+    background-color: #1B3058;
+    /* padding: 1%; */
+}
+.line{
+    height: 1%;
+    width: 32vw;
+    background: orange;
 }

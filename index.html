@@ -8,58 +8,84 @@
     <meta author="sangano">
 </head>
 <body>
-    <fieldset> 
-    <div class="container">
-        <form onsubmit="return other()" id="myForm">
-            <center><u><legend>STUDENT APPLICATION FORM</legend></u></center>
+    <div><center>
+        <fieldset>
+            <div class="container">
+                <form onsubmit="return other()" id="myForm">
+                    <center><u><legend>STUDENT APPLICATION FORM</legend></u></center>
 
-            <div class="item">
-                 <label for="name">Full Name:</label>
-                <input type="text" name="name" id="name" required pattern="[A-Za-z\s]+" minlength="3" maxlength="50" title="User name should be at least between 3-50 characters!">
+                    <div class="item">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name" id="name" required pattern="[A-Za-z\s]+" minlength="3" maxlength="50" title="User name should be at least between 3-50 characters!">
+                    </div>
+
+                    <div class="item">
+                        <label for="tel">Contacts:</label>
+                        <input type="tel" name="tel" id="tel" required inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" title="Phone number should be numbers between 0-9!">
+                    </div>
+                <div class="item">
+                        <label for="id">National ID:</label>
+                        <input type="text" name="id" id="id" required inputmode="numeric" minlength="16" maxlength="16" pattern="[0-9]{16}" title="NAtional id should be at least 16 numbers!">
+                </div>
+                    <div class="item">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="item">
+                        <label for="date">Date of Birth</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+
+                    <div class="item">
+                        <label for="age">Enter you Age</label>
+                        <input type="age" name="age" id="age" required inputmode="numeric" pattern="[0-9]{2}">
+                    </div>
+
+                    <div class="item2">
+                        <label for="gender">Your gender</label>
+                        <select name="gender" id="gender" required>
+                            <option value="" disabled selected>Choose your gender</option>
+                            <option value="male">Male</option> 
+                            <option value="female">Female</option> 
+                            <option value="other">Other</option>
+                            <input type="text" class="none" name="other" id="other" placeholder="Please specify">
+                        </select>
+                    
+                    </div>
+
+                    <div class="button">
+                        <button type="cancel">CANCEL</button>
+                        <button type="submit">SUBMIT</button>
+                        <!-- <button type="cancel">Campus life</button> -->
+                    </div>
+
+                </form>
+            </div> 
+        </fieldset> </center> 
+          <center><u><h5 for="campus">Campus Life</h5></u></center>
+
+        <div class="trigger campus " id="photo">
+            <div class="photos">
+                <table>
+                    <tr>
+                        <td><img src="images/China1.jpg" alt=""></td>
+                        <td><img src="images/JUVT2.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <p>Rwanda Polytechnic (RP)-Musanze College and Jinhua University of Vocational Technology Celebrate Second Cohort Graduation in China
+                        <td><img src="images/JUVT_3.jpg" alt=""></td>
+                        <td><img src="images/JUVT_5.jpg" alt=""></td>
+                    </tr>
+                </table>
+                
             </div>
 
-            <div class="item">
-                <label for="tel">Contacts:</label>
-                <input type="tel" name="tel" id="tel" required inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" title="Phone number should be numbers between 0-9!">
+            <div class="sidebar">
+                <div class="line"></div>
             </div>
-           <div class="item">
-                <label for="id">National ID:</label>
-                <input type="text" name="id" id="id" required inputmode="numeric" minlength="16" maxlength="16" pattern="[0-9]{16}" title="NAtional id should be at least 16 numbers!">
-           </div>
-            <div class="item">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="item">
-                <label for="date">Date of Birth</label>
-                <input type="date" name="date" id="date" required>
-            </div>
+        </div>
 
-            <div class="item">
-                <label for="age">Enter you Age</label>
-                <input type="age" name="age" id="age" required inputmode="numeric" pattern="[0-9]{2}">
-            </div>
-
-            <div class="item2">
-                <label for="gender">Your gender</label>
-                <select name="gender" id="gender" required>
-                    <option value="" disabled selected>Choose your gender</option>
-                    <option value="male">Male</option> 
-                    <option value="female">Female</option> 
-                    <option value="other">Other</option>
-                    <input type="text" class="none" name="other" id="other" placeholder="Please specify">
-                </select>
-             
-            </div>
-
-            <div class="button">
-                <button type="submit">SUBMIT</button>
-                <button type="cancel">CANCEL</button>
-            </div>
-
-        </form>
     </div>
-    </fieldset>
     <script src="script.js"></script>
 </body>
 </html>
