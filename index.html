@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>application form</title>
     <link rel="stylesheet" href="second.css">
+    <meta author="sangano">
 </head>
 <body>
     <fieldset> 
     <div class="container">
-        <form action="application-form">
+        <form onsubmit="return other()" id="myForm">
             <center><u><legend>STUDENT APPLICATION FORM</legend></u></center>
 
             <div class="item">
@@ -46,9 +47,9 @@
                     <option value="male">Male</option> 
                     <option value="female">Female</option> 
                     <option value="other">Other</option>
-                    <option value="prefer_not">Prefer not to say</option>
+                    <input type="text" class="none" name="other" id="other" placeholder="Please specify">
                 </select>
-                <input type="text" class="none" name="gender" id="gender" placeholder="e">
+             
             </div>
 
             <div class="button">
@@ -59,5 +60,6 @@
         </form>
     </div>
     </fieldset>
+    <script src="script.js"></script>
 </body>
 </html>
