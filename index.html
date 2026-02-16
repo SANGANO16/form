@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset> <legend>Student Registration Form</legend>
+    <div class="container">
+        <form id="registrationForm">
+            <h2></h2>
+            <p>Full Name</p><input type="text" id="fullName" placeholder="Full Name" required>
+            <p>Email Address</p><input type="email" id="email" placeholder="Email Address" required>
+            <p>Phone Number</p><input type="tel" id="phone" placeholder="Phone Number" required>
+            <p>Select Course</p><select id="course" required>
+                <option value="">Select Course</option>
+                <option value="cs">Computer Science</option>
+                <option value="math">Mathematics</option>
+                <option value="physics">Physics</option>
+            </select>
+            <p>Enter Recent School Name </p><input type="text" id="recentschool" placeholder="School Name" required>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>
