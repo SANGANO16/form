@@ -42,6 +42,11 @@ select input{
     display: flex;
     justify-content: space-around;
 }
+.button button{
+    padding: 1%;
+    border-radius: 2%;
+    border-color: orange;
+}
 input{
     border-radius: 10px;
     background: none;
@@ -50,20 +55,20 @@ input{
     display: none ;
     background: white;
 }
-.trigger.campus{
-    display: flex;
-}
 .trigger{
     display: none;
+    margin-top: 10%;
 }
 
 .photos{
     background-color: azure;
     padding: 1%;
+    color: #184C7F;
 }
 .photos img{
     height: 50vh;
     width: 30vw;
+    border: ;
 }
 .sidebar{
     margin-left: 2%;
@@ -75,4 +80,25 @@ input{
     height: 1%;
     width: 32vw;
     background: orange;
+}
+.sidebar p{
+    border-radius: 0% 20%;
+    background-color:#184C7F;
+    padding: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10%;
+    color: white;
+}
+.sidebar h6{
+    /* background-color:#A41D31; */
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10%;
+    color: white;
+}
+.paragaph{
+    display: grid;
+    justify-content: space-around;
 }
