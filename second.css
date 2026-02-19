@@ -10,7 +10,7 @@ body{
     /* background-color: aquamarine; */
 } 
 fieldset{
-    height: 75vh;
+    height: auto;
     /* background-image: url(images/back1.jpg); */
     width: 45vw;
     padding: 1%;
